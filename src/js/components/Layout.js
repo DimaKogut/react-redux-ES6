@@ -10,6 +10,7 @@ import UserList from './userList'
 //     user: store.user
 //   }
 // })
+
 export default class Layout extends React.Component {
   componentWillMount() {
     this.props.dispatch(fetchUser())

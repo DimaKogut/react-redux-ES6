@@ -1,6 +1,7 @@
 
 import jasmineEnzyme from '../js/components/Layout';
-
+import { connect } from 'react-redux';
+import { shallow } from 'enzyme';
 
 describe('components', () => {
   console.log(jasmineEnzyme);
