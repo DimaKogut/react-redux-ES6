@@ -5,11 +5,11 @@ import { fetchUser } from '../actions/userAction'
 
 import UserList from './userList'
 
-@connect((store) => {
-  return {
-    user: store.user
-  }
-})
+// @connect((store) => {
+//   return {
+//     user: store.user
+//   }
+// })
 export default class Layout extends React.Component {
   componentWillMount() {
     this.props.dispatch(fetchUser())
