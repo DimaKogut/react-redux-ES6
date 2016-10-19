@@ -37,9 +37,11 @@
   },
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-jest": "^16.0.0",
     "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
     "babel-polyfill": "^6.16.0",
     "istanbul-instrumenter-loader": "^1.0.0",
+    "jest": "^16.0.1",
     "json-loader": "^0.5.4",
     "karma-babel-preprocessor": "^6.0.1",
     "karma-bro": "^0.11.1",
@@ -47,7 +49,7 @@
   },
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "test:watch": "karma start karma.conf.js --browsers PhantomJS"
   },
   "author": "",

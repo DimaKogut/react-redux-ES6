@@ -1,11 +1,29 @@
-
-import jasmineEnzyme from '../js/components/Layout';
-import { connect } from 'react-redux';
+import React from 'react'
 import { shallow } from 'enzyme';
 
+import { connect } from 'react-redux'
+import Layout from '../js/components/Layout';
+
 describe('components', () => {
-  console.log(jasmineEnzyme);
+  console.log();
   it('should call addTodo if length of text is greater than 0', () => {})
+})
+
+// function setup() {
+
+//   const enzymeWrapper = shallow(<Header />)
+
+//   return {
+//     enzymeWrapper
+//   }
+// }
+
+describe('components', () => {
+  describe('Header', () => {
+    it("contains spec with an expectation", function() {
+      expect(shallow(<Layout />).contains(<div className="main" />)).toBe(true);
+    })
+  })
 })
 
 

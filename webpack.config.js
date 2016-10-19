@@ -25,7 +25,7 @@ module.exports = {
     'react/addons': true,
     'react/lib/ExecutionEnvironment': true,
     'react/lib/ReactContext': true
-  }
+  },
   output: {
     path: __dirname + "/src/",
     filename: "client.min.js"
